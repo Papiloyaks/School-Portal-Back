@@ -93,10 +93,10 @@ const sendEmail = () => {
   });
 
   var mailOptions = {
-    to: 'ibrahimabiodun069@gmail.com',
-    from: 'adeniyi.ibrawhim@gmail.com',
-    subject: 'Testing my Node Mailer',
-    html: '<h1>Hello Mr Adeolu, how are you doing<h1>'
+    to: email,
+    from: 'yakubyusuf608@gmail.com',
+    subject: 'welcome to student portal',
+    html: '<h1>You have successfully signed up welcome to the student portal</h1>'
   };
 
   transporter.sendMail(mailOptions, function (error, info) {

@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 5000;
 // MongoDB connection
 const URI = process.env.MONGO_URI;
 if (!URI) {
-  console.error("❌ MONGO_URI is not defined in .env");
+  console.error("MONGO_URI is not defined in .env");
   process.exit(1); // Stop app if no DB URI
 }
 

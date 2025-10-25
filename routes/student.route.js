@@ -9,7 +9,7 @@ const {
   upload,
   sendEmail,
   helpStudents,
-  deleteHelp, // 👈 add this here
+  deleteHelp, // add this here
 } = require('../Controllers/student.controller');
 
 // ✅ Routes
@@ -19,6 +19,6 @@ router.get('/portal', portal);
 router.post('/image', upload);
 router.get('/sendemail', sendEmail);
 router.post('/help', helpStudents);
-router.delete('/help/:id', deleteHelp); // 👈 works now
+router.delete('/help/:id', deleteHelp); // works now
 
 module.exports = router;
